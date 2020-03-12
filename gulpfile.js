@@ -9,6 +9,8 @@ function released(success){
 	return gulp.src('./**/**')
 	.pipe(run(`git add .`).exec())
 	.pipe(run(`git commit -m ${versionFind}`).exec())
+	.pipe(run(`git tag ${versionFind}`).exec())
+	.pipe(run(`git push origin ${versionFind}`).exec())
 	.pipe(run(`git push origin master`).exec())
 	
 	success();
