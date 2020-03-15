@@ -17,9 +17,3 @@ function released(success){
 }
 
 exports.released = released;
-
-// run(`git tag ${versionFind}`).exec()
-//     run( `git push origin ${versionFind}` ).exec();
-//     run(`git add .`).exec();
-//     run(`git commit -m ${versionFind}`).exec();
-//     run(`git push origin master`).exec();
